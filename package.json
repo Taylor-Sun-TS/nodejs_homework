@@ -1,0 +1,36 @@
+{
+  "name": "nodejs_homework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "task_1.1": "nodemon ./src/task_1/task_1",
+    "task_1.2": "nodemon ./src/task_1/task_2",
+    "task_1.3": "babel src -d build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Taylor-Sun-TS/nodejs_homework.git"
+  },
+  "keywords": [
+    "nodejs",
+    "homework"
+  ],
+  "author": "Taylor_Sun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Taylor-Sun-TS/nodejs_homework/issues"
+  },
+  "homepage": "https://github.com/Taylor-Sun-TS/nodejs_homework#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.13.10",
+    "@babel/core": "^7.13.10",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.13.10",
+    "nodemon": "^2.0.7"
+  },
+  "dependencies": {
+    "csvtojson": "^2.0.10"
+  }
+}
