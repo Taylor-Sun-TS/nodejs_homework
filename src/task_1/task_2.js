@@ -8,7 +8,7 @@ const resultFilePath = path.join(__dirname, "./results.json");
 
 const csvToJsonFile = async () => {
     try {
-        await fs.writeFileSync(resultFilePath, "", { "flag": "w" });
+        fs.writeFileSync(resultFilePath, "", { "flag": "w" });
 
         const readStream = fs.createReadStream(csvFilePath);
         const writeStream = fs.createWriteStream(resultFilePath);

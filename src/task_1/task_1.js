@@ -1,19 +1,19 @@
 "use strict";
 
+const readline = require("readline");
+
 const revertInput = () => {
-    process.stdin.resume();
-    process.stdin.setEncoding("utf8");
+    const rl = readline.createInterface({
+        input: process.stdin,
+        output: process.stdout
+    });
 
-    process.stdin.on("readable", () => {
-        let data
-        while (data = process.stdin.read()) {
-            // remove ending chars \r\n
-            data = data.replace(/(\r|\n|\r\n|\n\r)$/, "");
+    rl.prompt();
 
-            const outputStr = data.split("").reverse().join("")
+    rl.on("line", (data) => {
+        console.log(data.split("").reverse().join(""));
 
-            process.stdout.write(`${outputStr}\r\n\r\n`);
-        }
+        rl.prompt();
     });
 }
 
