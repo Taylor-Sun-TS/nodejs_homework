@@ -7,7 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "task_1.1": "nodemon ./src/task_1/task_1",
     "task_1.2": "nodemon ./src/task_1/task_2",
-    "task_1.3": "babel src -d build"
+    "task_1.3": "babel src -d build",
+    "lint": "eslint -c .eslintrc src/task_2/",
+    "task_2": "nodemon ./src/task_2/task"
   },
   "repository": {
     "type": "git",
@@ -28,9 +30,14 @@
     "@babel/core": "^7.13.10",
     "@babel/polyfill": "^7.12.1",
     "@babel/preset-env": "^7.13.10",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.22.0",
     "nodemon": "^2.0.7"
   },
   "dependencies": {
-    "csvtojson": "^2.0.10"
+    "@hapi/joi": "^17.1.1",
+    "csvtojson": "^2.0.10",
+    "express": "^4.17.1",
+    "express-joi-validate": "^3.0.1"
   }
 }

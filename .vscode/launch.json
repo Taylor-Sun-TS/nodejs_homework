@@ -1,0 +1,13 @@
+{
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "launch task_2",
+            "program": "${workspaceFolder}/src/task_2/task.js",
+            "outputCapture": "std",
+            "args": [ ],
+            "env": { }
+        }
+    ]
+}
